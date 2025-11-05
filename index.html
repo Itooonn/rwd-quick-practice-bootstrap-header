@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tindahan ni Karltzy</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+.bg-dark-green {
+    background-color: #113826 !important; 
+}
+
+.bg-gold {
+    background-color: #f3e9a2 !important; 
+}
+
+.btn-gold {
+  background-color: #f3e9a2 !important; 
+  color: black !important;
+  border-color: #9f814c;
+}
+
+.btn-dark-green {
+  background-color: #113826 !important; 
+  color: white !important;
+  border: none;
+}
+
+.card-custom {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Fixed height for all cards */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for card images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.card-body {
+    flex: 1; /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex: 1; /* Takes remaining space, pushing button to bottom */
+    overflow: hidden;
+}
+
+.logo img {
+    margin-left: 2rem;
+}
+
+
+</style>
+</head>
+
+<body class="p-0">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark-green py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#"> <!--LOGO-->
+                <img src="images/logos/logo1.png" alt="Logo" width="200" class="d-inline-block align-text-top">
+            </a>
+<!-- Burger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li> <!---->
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvas" role="button">About</a> <!---->
+                    </li>
+
+                    <li class="nav-item dropdown-center">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Order now</a></li>
+                            <li><a class="dropdown-item" href="#">Pre-order</a></li>
+                            <li><a class="dropdown-item" href="#">Delivery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> <!---->
+                </ul>
+
+                <!-- Search Form -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-gold btn-outline-light" type="submit">Search</button>
+                </form>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-4">
+        <!-- CARDS -->
+        <div class="container my-4">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom">
+                        <img src="images/pictures/matcha.jpg" class="card-img-top" alt="matcha">
+                        <div class="card-body">
+                            <h5 class="card-title">Matcha Performative Deluxe</h5>
+                            <p class="card-text">Matcha Perforamtive Deluxe is our powerful product to make 
+                                other people amaze around you.</p>
+                            <a href="#" class="btn btn-dark-green">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom">
+                        <img src="images/pictures/latte.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iced latte</h5>
+                            <p class="card-text">Mediocre drink for plain people.</p>
+                            <a href="#" class="btn btn-dark-green">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom">
+                        <img src="images/pictures/taho.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Taho</h5>
+                            <p class="card-text">A tradional Filipino breakfast slash drink that is both sweet and tasty.</p>
+                            <a href="#" class="btn btn-dark-green">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
